@@ -2,15 +2,10 @@ body{
   background-image: url(./images/logos4.jpg);
   background-repeat: repeat;
   margin: 0px auto;
-  width: 1200px;
+  float: left;
   padding: 0px;
 }
-.global{
-  width: 100%;
-  height: 100%;
-  align-items: center;
-  margin: 0px auto;
-}
+
 .encabezado1 {
   background-color: black;
   height: 100px;
@@ -19,7 +14,9 @@ body{
   width: 100%;
   border: 0.5px white;
 }
-
+.container{
+  width: 100%;
+}
 
 
 .ingresaryregistrar {
@@ -46,15 +43,15 @@ body{
 .iniciohorizontal{
   list-style:none;
   display:flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .iniciohorizontal  li {
   display: block;
-  padding: 15px, 20px;
+  
   color: rgb(0, 0, 0);
   text-decoration:none;
-  font-size: 25px;
+  font-size: 23px;
 }
 
 .iniciohorizontal  li:hover{
@@ -182,7 +179,7 @@ body{
   width:90%;
   height: 530px;
   display: flex;
-  left: 60px;
+  left: 20px;
   position: relative;
   bottom: -30px;
 }
@@ -190,47 +187,46 @@ body{
 
 
 .imagenes2 {
-  
-  position: relative;
-  float: left;
+  position: relative; 
+   float: left; 
   z-index: 5;
-  margin-top: -79%;
-  width: 506px;
-  height: 400px;
-  
+  margin-top: -82%;
 }
 
 .tituloReceta {
   font-size: 40px;
   font-family: "New Tegomin", serif;
   background-color: yellow;
-  background-size: 506px;
-  position: relative;
+/*   background-size: 506px;
+ */  position: relative;
   z-index: 0;
   margin: 0px;
   padding: 0%;
   text-align: center;
   text-shadow: rgb(109, 109, 33) 3px 3px 3px;
   color: black;
-    width: 506px;
+    width: 100%;
     height: 100%;
     
   }
 
 .imagenfondo2{
-  position: relative;
-  left:30%;
-  top: 30%;
+  margin-top: 5%;
+  margin-left: 20%;
 }  
 
 .casita{
-position: relative;
-justify-content: flex-end;
+/* position: relative; */
 background-color: yellow;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+
 }
 
  .tablones2 {
-  width: 1200px;
+  width:100%;
   height: 600px;
   background-image: url(./images/tablon.jpeg);
   background-repeat: no-repeat;
@@ -285,66 +281,218 @@ background-color: yellow;
   } 
   
   .tituloReceta{
-    width: 80%;
+    width: 85%;
   }
   .contenido{
-    width: 80%;
+    width: 100%;
     font-size: 9px;
    } 
   .imagenes2{
-    width: 80%;
+    width: 85%;
+    height: auto;
+  } 
+  .casita{ 
+    width: 20%;
+  }
+  .imagenfondo2{
+     width: 50%;
+    }
+    .imagenlogo {
+      width: 100%;
+    }
+    .encabezado1{
+      width: 100%;
+    }
+   .tablones2 {
+    width: 100%;
+  } 
+  .cuerditas2{
+    width: 100%;
+  }
+  .ingresaryregistrar{
+    width: 28%;
+  }
+  .imagenlogo{
+    width: 100%;
+  }
+  .barrainicio{
+    width: 10%;
+  }
+  .iniciohorizontal{
+    width: 10%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-vertical{
+    width: 10%;
+  }
+  .ingredientes-barra{
+    width: 10%;
+  }
+  .autores{
+    width: 10%;
+  }
+  .vacio{
+    width: 100%;
+  }
+  .imagenfondo2{
+    width: 8%;
+    margin: 0px;
+  }
+  .encabezadoRecetario{
+    width: 100%;
+  }
+  .backgroundimage2{
+    width: 100%;
+  }
+ 
+}
+@media  screen and (max-width:800px) {
+
+  .receta{
+    width: 100%;
+  } 
+  
+  .tituloReceta{
+    width: 85%;
+  }
+  .contenido{
+    width: 100%;
+    font-size: 9px;
+   } 
+  .imagenes2{
+    width: 85%;
     height: auto;
   } 
   .casita{ 
     width: 10%;
   }
   .imagenfondo2{
-     width: 50%;
+     width: 60%;
+     margin: 0px auto;
     }
     .imagenlogo {
-      width: 50%;
+      width: 100%;
     }
     .encabezado1{
-      width: 50%;
+      width: 100%;
     }
-  .tablones2 {
-    width: 40%;
-  }
+   .tablones2 {
+    width: 100%;
+  } 
   .cuerditas2{
-    width: 50%;
+    width: 100%;
   }
   .ingresaryregistrar{
-    width: 50%;
+    width: 28%;
   }
   .imagenlogo{
-    width: 50%;
+    width: 100%;
   }
   .barrainicio{
-    width: 50%;
+    width: 10%;
   }
   .iniciohorizontal{
-    width: 50%;
+    width: 10%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
   }
   .menu-vertical{
-    width: 50%;
+    width: 10%;
   }
   .ingredientes-barra{
-    width: 50%;
+    width: 10%;
   }
   .autores{
-    width: 50%;
+    width: 10%;
   }
   .vacio{
-    width: 50%;
+    width: 100%;
   }
   .imagenfondo2{
-    width: 50%;
+    width: 100%;
   }
   .encabezadoRecetario{
-    width: 50%;
+    width: 100%;
   }
   .backgroundimage2{
-    width: 50%;
+    width: 100%;
+  }
+ 
+}
+@media  screen and (max-width:950px) {
+
+  .receta{
+    width: 100%;
+  } 
+  
+  .tituloReceta{
+    width: 85%;
+  }
+  .contenido{
+    width: 100%;
+    font-size: 9px;
+   } 
+  .imagenes2{
+    width: 85%;
+    height: auto;
+  } 
+  .casita{ 
+    width: 10%;
+  }
+  .imagenfondo2{
+    width: 60%;
+    margin: 0px auto;
+    }
+    .imagenlogo {
+      width: 100%;
+    }
+    .encabezado1{
+      width: 100%;
+    }
+   .tablones2 {
+    width: 100%;
+  } 
+  .cuerditas2{
+    width: 100%;
+  }
+  .ingresaryregistrar{
+    width: 28%;
+  }
+  .imagenlogo{
+    width: 100%;
+  }
+  .barrainicio{
+    width: 10%;
+  }
+  .iniciohorizontal{
+    width: 10%;
+    height: 5%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-vertical{
+    width: 10%;
+  }
+  .ingredientes-barra{
+    width: 10%;
+  }
+  .autores{
+    width: 10%;
+  }
+  .vacio{
+    width: 100%;
+  }
+  .imagenfondo2{
+    width: 100%;
+  }
+  .encabezadoRecetario{
+    width: 100%;
+  }
+  .backgroundimage2{
+    width: 100%;
   }
  
 }
