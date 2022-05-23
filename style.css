@@ -380,6 +380,9 @@ align-items: center;
 .imagenlogo{
   width: 100%;
 } 
+.contenido{
+  font-size: 12px;
+}
 }
 
 @media only screen and (min-width:600px) {
